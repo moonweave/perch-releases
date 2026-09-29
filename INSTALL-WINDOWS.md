@@ -18,7 +18,23 @@ WSL 안에서 실행한 Codex·Claude 세션은 아직 보지 못해요. Windows
 
 [최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest) 페이지 아래쪽 **Assets**에서 `Perch-<버전>-windows-x64-setup.exe`를 받으세요. 같은 이름 뒤에 `.sha256`이 붙은 파일도 함께 받아요.
 
-## 2. 설치하고 처음 한 번 열어 주기
+## 2. 파일 확인
+
+같은 릴리스에서 설치 파일과 `.sha256` 파일을 받은 뒤 PowerShell에서 확인해요.
+
+```powershell
+$files = @(Get-ChildItem -Name 'Perch-*-windows-x64-setup.exe')
+if ($files.Count -ne 1) { throw '다운로드 폴더에 Perch 설치 파일 하나만 두고 다시 실행하세요.' }
+$file = ".\$($files[0])"
+$expected = (Get-Content "${file}.sha256").Split()[0]
+$actual = (Get-FileHash $file -Algorithm SHA256).Hash.ToLowerInvariant()
+if ($actual -ne $expected) { throw '체크섬이 다릅니다. 설치하지 마세요.' }
+'OK'
+```
+
+다운로드 폴더에 이번 버전의 설치 파일 하나만 남겨 두고, 그 폴더에서 PowerShell을 열어요. `OK`가 나오지 않으면 설치 파일을 열지 말고 다시 받으세요. 체크섬은 파일이 바뀌었는지 확인하지만, 게시자나 코드 서명을 인증하지는 않아요.
+
+## 3. 설치하고 처음 한 번 열어 주기
 
 Perch는 아직 코드 서명을 받지 않은 베타예요. Windows가 게시자를 확인하지 못했다는 경고를 보여 줄 수 있어요. 이 경고만으로 파일의 안전성을 판단할 수는 없어요. 공식 릴리스에서 받은 파일인지 먼저 확인해 주세요.
 
@@ -30,7 +46,7 @@ Perch는 아직 코드 서명을 받지 않은 베타예요. Windows가 게시�
 
 **스마트 앱 컨트롤이 켜져 있으면** 서명되지 않은 Perch 설치 파일이 차단돼요. 보안 기능을 끄지 말고, 서명된 설치 파일이 준비될 때까지 기다려 주세요. 회사·학교에서 관리하는 PC도 정책에 따라 설치가 막힐 수 있어요.
 
-## 3. Codex·Claude와 연결하기
+## 4. Codex·Claude와 연결하기
 
 Perch를 열면 **작업함** 창이 보여요. 여기서 한 번만 연결하면, 그 뒤로는 어떤 프로젝트든 알아서 찾아요.
 
@@ -48,7 +64,7 @@ Codex를 쓴다면 Perch 훅을 한 번 승인해야 해요. 승인하기 전에
 
 Perch를 업데이트해도 훅 명령은 그대로라 다시 신뢰할 필요가 없어요. 승인이 끝나면 **설정 → 연결**의 Codex가 **Codex 승인 필요**에서 **첫 작업 대기**로 바뀌어요.
 
-## 4. 첫 말풍선 보기
+## 5. 첫 말풍선 보기
 
 1. 평소처럼 프로젝트 폴더에서 Codex나 Claude Code를 켜고 일을 하나 시켜요.
 2. 화면 오른쪽 아래에 캐릭터가 나타나고, 무엇을 하는지 작게 보여 줘요.
@@ -68,22 +84,6 @@ Perch를 업데이트해도 훅 명령은 그대로라 다시 신뢰할 필요�
 - **잔잔함**: 작업 중이에요.
 
 화면을 공유할 때는 **설정 → 화면 → 말풍선에 작업 내용 표시**를 꺼서 요청 내용 대신 상태만 보여 주세요. Perch는 메뉴 막대 대신 작업 표시줄 오른쪽 알림 영역에서 열 수 있어요.
-
-## 파일 확인
-
-같은 릴리스에서 설치 파일과 `.sha256` 파일을 받은 뒤 PowerShell에서 확인해요.
-
-```powershell
-$files = @(Get-ChildItem -Name 'Perch-*-windows-x64-setup.exe')
-if ($files.Count -ne 1) { throw '다운로드 폴더에 Perch 설치 파일 하나만 두고 다시 실행하세요.' }
-$file = ".\$($files[0])"
-$expected = (Get-Content "${file}.sha256").Split()[0]
-$actual = (Get-FileHash $file -Algorithm SHA256).Hash.ToLowerInvariant()
-if ($actual -ne $expected) { throw '체크섬이 다릅니다. 설치하지 마세요.' }
-'OK'
-```
-
-다운로드 폴더에 이번 버전의 설치 파일 하나만 남겨 두고, 그 폴더에서 PowerShell을 열어요. `OK`가 나오지 않으면 설치 파일을 열지 말고 다시 받으세요. 체크섬은 파일이 바뀌지 않았는지 확인하지만, 게시자나 코드 서명을 인증하지는 않아요.
 
 ## 지우기
 
