@@ -19,9 +19,10 @@ WSL 안에서 실행한 세션은 아직 보이지 않아요. Windows에서 직�
 
 ## 새 버전으로 바꿨어요
 
-1. [최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest)에서 Windows 설치 파일을 받아요. 해당 릴리스에 `Perch-<버전>-windows-x64-setup.exe`가 없으면 아직 Windows용 파일이 제공되지 않아요.
-2. Perch를 종료하고 새 설치 파일을 실행해 안내를 따라요. 내 계정에 설치되며 관리자 권한은 필요하지 않아요.
-3. 기록과 설정은 `%USERPROFILE%\.perch`에 남아요. **설정 → 연결**에서 다시 연결을 요구하면 한 번 눌러요.
+1. [최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest)에서 Windows 설치 파일과 같은 이름의 `.sha256` 파일을 함께 받아요. 해당 릴리스에 `Perch-<버전>-windows-x64-setup.exe`가 없으면 아직 Windows용 파일이 제공되지 않아요.
+2. [Windows 설치 안내](https://github.com/moonweave/perch-releases/blob/main/INSTALL-WINDOWS.md)의 **파일 확인** 절차를 먼저 실행해요. `OK`가 나오지 않으면 설치 파일을 열지 마세요.
+3. Perch를 종료하고 새 설치 파일을 실행해 안내를 따라요. 내 계정에 설치되며 관리자 권한은 필요하지 않아요.
+4. 기록과 설정은 `%USERPROFILE%\.perch`에 남아요. **설정 → 연결**에서 다시 연결을 요구하면 한 번 눌러요.
 
 ## “Perch 밖에서 훅 설정이 바뀌었어요”라고 나와요
 
