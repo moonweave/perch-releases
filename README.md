@@ -4,7 +4,7 @@ Perch는 이 PC나 Mac에서 실행한 Codex·Claude Code 세션이 승인을 �
 
 ## 다운로드
 
-**[Mac 다운로드](https://github.com/moonweave/perch-releases/download/v0.1.14/Perch-0.1.14-macOS-universal.dmg)** · **[Windows 다운로드](https://github.com/moonweave/perch-releases/download/v0.1.14/Perch-0.1.14-windows-x64-setup.exe)**
+**[Mac 다운로드](https://github.com/moonweave/perch-releases/releases/download/v0.1.14/Perch-0.1.14-macOS-universal.dmg)** · **[Windows 다운로드](https://github.com/moonweave/perch-releases/releases/download/v0.1.14/Perch-0.1.14-windows-x64-setup.exe)**
 
 검수한 v0.1.14 설치 파일로 바로 연결돼요. 파일 목록에서 고를 필요는 없어요.
 
