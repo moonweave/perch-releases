@@ -8,7 +8,7 @@ Perch는 이 PC나 Mac에서 실행한 Codex·Claude Code 세션이 승인을 �
 
 검수한 v0.1.12 설치 파일로 바로 연결돼요. 파일 목록에서 고를 필요는 없어요.
 
-**처음 설치한다면 [시작 가이드 — 클릭으로 설치하고 AI에게 도움받기](START-HERE.md)**부터 보세요. AI 도움은 선택이고, 추가 유료 도구는 필요하지 않아요.
+**처음 설치한다면 [시작 가이드 — 클릭으로 설치하고 AI에게 도움받기](https://github.com/moonweave/perch-releases/blob/main/START-HERE.md)**부터 보세요. AI 도움은 선택이고, 추가 유료 도구는 필요하지 않아요.
 
 파일 확인: [Mac 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.12/Perch-0.1.12-macOS-universal.dmg.sha256) · [Windows 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.12/Perch-0.1.12-windows-x64-setup.exe.sha256). 확인은 로컬 파일에 접근할 수 있는 AI에게 도움받거나 상세 설치 안내로 직접 할 수 있어요. 체크섬은 게시자나 안전성을 인증하지 않아요.
 
