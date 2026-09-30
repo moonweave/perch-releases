@@ -234,7 +234,7 @@ footer { font-size: 13.5px; color: var(--ink-3); border-top: 1px solid var(--lin
 
   <section aria-labelledby="ai-help">
     <div class="section-head"><h2 id="ai-help">명령어가 낯설면 AI와 같이 설치해요</h2><p class="muted">기본 흐름은 <b>내 기기용 다운로드 → 파일 확인 → 설치 → Perch 안에서 연결</b>이에요. 아래 요청문을 복사해 이미 쓰는 Codex나 Claude에 보내면, 한 단계씩 도움받을 수 있어요. AI 이용료나 사용량은 별개이고 새 유료 도구를 살 필요는 없어요.</p></div>
-    <div class="grid-2"><div class="card"><h3>일반 채팅 AI</h3><p>화면에 뜬 안내를 설명하고 다음 클릭을 알려 줄 수 있어요. 내 파일을 직접 확인하거나 설치할 수 있다고 가정하지 마세요. 화면을 공유한다면 요청 내용·계정 정보·경로를 먼저 가려요.</p></div><div class="card"><h3>내 컴퓨터를 조작할 수 있는 AI</h3><p>권한이 있다면 공식 파일 받기와 체크섬 확인을 도울 수 있어요. 실제 설치, 보안 경고 허용, 훅 변경과 Codex 신뢰 승인은 내가 내용을 확인한 뒤 진행해요. 권한이 없다면 클릭 안내를 받으면 돼요.</p></div></div>
+    <div class="grid-2"><div class="card"><h3>일반 채팅 AI</h3><p>화면에 뜬 안내를 설명하고 다음 클릭을 알려 줄 수 있어요. 내 파일을 직접 확인하거나 설치할 수 있다고 가정하지 마세요. 화면을 공유한다면 요청 내용·계정 정보·경로를 먼저 가려요.</p></div><div class="card"><h3>내 컴퓨터를 조작할 수 있는 AI</h3><p>권한이 있다면 공식 파일 받기와 체크섬 확인을 도울 수 있어요. 설치하거나 보안 경고를 허용할 때, 훅 설정을 바꾸거나 Codex 훅을 신뢰할 때는 내용을 직접 확인한 뒤 진행하세요. 권한이 없다면 클릭 안내를 받으면 돼요.</p></div></div>
     <div class="cmd prompt"><pre><code id="prompt-install">Perch 무료 베타 설치를 도와줘. 나는 터미널과 PowerShell에 익숙하지 않아.
 공식 안내: https://github.com/moonweave/perch-releases/blob/main/START-HERE.md
 공식 배포: https://github.com/moonweave/perch-releases/releases/tag/v0.1.12
@@ -254,7 +254,7 @@ footer { font-size: 13.5px; color: var(--ink-3); border-top: 1px solid var(--lin
   <section aria-labelledby="what">
     <div class="section-head">
       <h2 id="what">말풍선 색만 알면 돼요</h2>
-      <p class="muted">Perch는 조용히 있다가, 사람이 봐야 할 때만 눈에 띄어요. 말풍선으로 원래 작업 열기를 요청할 수 있어요. 실행 중인 창을 찾지 못하면 직접 찾아 달라는 안내가 나올 수 있어요.</p>
+      <p class="muted">Perch는 조용히 있다가, 사람이 봐야 할 때만 눈에 띄어요. 말풍선을 누르면 해당 작업을 열 수 있어요. 실행 중인 창을 찾지 못하면 직접 찾아 달라는 안내가 나올 수 있어요.</p>
     </div>
     <div class="explain">
       <div class="tone"><span class="dot amber"></span><h3>주황 · 답이 필요해요</h3><p>승인이나 질문을 기다리며 작업이 멈춰 있어요. 가장 먼저 봐야 할 것.</p></div>
@@ -286,7 +286,7 @@ footer { font-size: 13.5px; color: var(--ink-3); border-top: 1px solid var(--lin
 shasum -a 256 -c Perch-*-macOS-universal.dmg.sha256</code></pre><button class="copy" type="button" data-copy="cmd-sha" aria-label="Mac 파일 확인 명령 복사">복사</button></div>
           <p class="fine"><b>OK</b>가 나오면 다음 단계로 가요. 다른 결과가 나오면 열지 말고 공식 릴리스에서 다시 받으세요. 체크섬은 파일 변경 여부만 확인하며 게시자를 인증하거나 보안 경고를 없애지는 않아요.</p>
           </details>
-          <p class="fine">AI에게 맡겼다면 실제 파일 비교 결과를 확인한 뒤 다음 단계로 가요. 파일 접근 권한 없는 AI의 추측만으로 통과시키지 마세요.</p>
+          <p class="fine">AI에게 맡겼다면 실제 파일 비교 결과를 확인한 뒤 다음 단계로 가요. AI가 파일을 직접 확인하지 못했다면, 확인됐다는 답만 믿고 설치하지 마세요.</p>
         </div>
       </li>
 
