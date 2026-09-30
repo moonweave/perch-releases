@@ -1,5 +1,7 @@
 # Perch 설치
 
+명령어가 낯설다면 [시작 가이드](https://github.com/moonweave/perch-releases/blob/main/START-HERE.md)로 가세요. 다운로드 버튼과 AI에게 복사해 보낼 설치 도움 요청문이 있어요. 아래는 직접 확인할 때 쓰는 상세 안내예요.
+
 Perch는 Codex나 Claude Code 세션이 승인을 기다리거나 응답을 마쳤을 때 화면 구석에 알려 주는 Mac 앱이에요. 설치는 5분 정도 걸려요. Codex를 쓴다면 승인할 때 터미널을 한 번만 열어요. Windows 설치 안내는 [여기](https://github.com/moonweave/perch-releases/blob/main/INSTALL-WINDOWS.md)에 있어요.
 
 ## 준비물
