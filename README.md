@@ -2,7 +2,17 @@
 
 Perch는 이 PC나 Mac에서 실행한 Codex·Claude Code 세션이 승인을 기다리거나 응답을 마쳤을 때 알려 주는 데스크톱 앱이에요. 필요한 요약 정보만 이 기기에 보관하고 인터넷으로 보내지 않아요.
 
-공식 설치 파일은 [최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest)에서만 받아 주세요. 먼저 해당 릴리스의 **Assets**에 내 운영체제용 설치 파일이 있는지 확인해요.
+## 다운로드
+
+**[Mac 다운로드](https://github.com/moonweave/perch-releases/releases/download/v0.1.12/Perch-0.1.12-macOS-universal.dmg)** · **[Windows 다운로드](https://github.com/moonweave/perch-releases/releases/download/v0.1.12/Perch-0.1.12-windows-x64-setup.exe)**
+
+검수한 v0.1.12 설치 파일로 바로 연결돼요. 파일 목록에서 고를 필요는 없어요.
+
+**처음 설치한다면 [시작 가이드 — 클릭으로 설치하고 AI에게 도움받기](START-HERE.md)**부터 보세요. AI 도움은 선택이고, 추가 유료 도구는 필요하지 않아요.
+
+파일 확인: [Mac 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.12/Perch-0.1.12-macOS-universal.dmg.sha256) · [Windows 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.12/Perch-0.1.12-windows-x64-setup.exe.sha256). 확인은 로컬 파일에 접근할 수 있는 AI에게 도움받거나 상세 설치 안내로 직접 할 수 있어요. 체크섬은 게시자나 안전성을 인증하지 않아요.
+
+다른 버전과 기타 자료는 [릴리스 목록](https://github.com/moonweave/perch-releases/releases)에서 볼 수 있어요. 아래 문서·소스 압축 파일은 설치할 필요가 없어요.
 
 | 기기 | 릴리스 Assets에서 찾을 파일 | 안내 |
 |---|---|---|
