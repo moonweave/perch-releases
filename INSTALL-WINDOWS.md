@@ -1,6 +1,6 @@
 # Perch 설치 (Windows, 베타)
 
-명령어가 낯설다면 [시작 가이드](https://github.com/moonweave/perch-releases/blob/main/START-HERE.md)로 가세요. Windows 다운로드 버튼과 AI에게 복사해 보낼 설치 도움 요청문이 있어요. PowerShell을 직접 쓰지 않아도 로컬 파일에 접근할 수 있는 AI에게 파일 확인을 도움받을 수 있어요.
+명령어가 낯설다면 [시작 가이드](https://github.com/moonweave/perch-releases/blob/main/START-HERE.md)로 가세요. Windows 다운로드 버튼과 AI에게 설치 순서를 물어볼 때 쓸 요청문이 있어요. 화면에 보이는 내용을 설명하면 다음 단계를 안내받을 수 있어요. AI가 파일을 직접 대조하지 않았다면 체크섬 확인은 끝난 게 아니에요.
 
 Perch는 Codex나 Claude Code가 승인·질문을 기다리며 멈춰 있을 때, 화면 구석의 작은 캐릭터가 알려 주는 Windows 앱이에요. macOS 안내는 [설치 안내](https://github.com/moonweave/perch-releases/blob/main/INSTALL.md)에 있어요.
 

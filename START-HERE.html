@@ -234,14 +234,14 @@ footer { font-size: 13.5px; color: var(--ink-3); border-top: 1px solid var(--lin
 
   <section aria-labelledby="ai-help">
     <div class="section-head"><h2 id="ai-help">명령어가 낯설면 AI와 같이 설치해요</h2><p class="muted">기본 흐름은 <b>내 기기용 다운로드 → 파일 확인 → 설치 → Perch 안에서 연결</b>이에요. 아래 요청문을 복사해 이미 쓰는 Codex나 Claude에 보내면, 한 단계씩 도움받을 수 있어요. AI 이용료나 사용량은 별개이고 새 유료 도구를 살 필요는 없어요.</p></div>
-    <div class="grid-2"><div class="card"><h3>일반 채팅 AI</h3><p>화면에 뜬 안내를 설명하고 다음 클릭을 알려 줄 수 있어요. 내 파일을 직접 확인하거나 설치할 수 있다고 가정하지 마세요. 화면을 공유한다면 요청 내용·계정 정보·경로를 먼저 가려요.</p></div><div class="card"><h3>내 컴퓨터를 조작할 수 있는 AI</h3><p>권한이 있다면 공식 파일 받기와 체크섬 확인을 도울 수 있어요. 설치하거나 보안 경고를 허용할 때, 훅 설정을 바꾸거나 Codex 훅을 신뢰할 때는 내용을 직접 확인한 뒤 진행하세요. 권한이 없다면 클릭 안내를 받으면 돼요.</p></div></div>
+    <div class="grid-2"><div class="card"><h3>화면별 안내</h3><p>AI에게 아래 요청문을 보내고 화면에 보이는 내용을 알려 주면 다음 단계를 물어볼 수 있어요. 화면을 공유한다면 요청 내용·계정 정보·경로를 먼저 가려요.</p></div><div class="card"><h3>파일 확인</h3><p>설치 파일과 <code>.sha256</code> 파일을 실제로 비교한 경우에만 확인이 끝난 거예요. AI가 직접 대조하지 않았다면 검증됐다고 볼 수 없어요. 설치나 보안 경고 허용, 훅 변경, Codex 신뢰는 내가 내용을 확인한 뒤 진행해요.</p></div></div>
     <div class="cmd prompt"><pre><code id="prompt-install">Perch 무료 베타 설치를 도와줘. 나는 터미널과 PowerShell에 익숙하지 않아.
 공식 안내: https://github.com/moonweave/perch-releases/blob/main/START-HERE.md
 공식 배포: https://github.com/moonweave/perch-releases/releases/tag/v0.1.12
 
 1. 내 운영체제를 먼저 확인하고 Mac 또는 Windows x64 설치 파일 하나를 골라줘.
-2. 내가 직접 할 클릭을 한 단계씩 알려줘. 로컬 파일 접근 권한이 없다면 직접 확인했다고 말하지 마.
-3. 권한이 있으면 같은 릴리스의 체크섬과 설치 파일을 비교하고 실제 결과를 알려줘. 체크섬은 안전성 인증이 아니야.
+2. 내가 직접 할 클릭을 한 단계씩 알려줘. 설치 파일과 체크섬을 실제로 비교할 수 없다면 직접 확인했다고 말하지 마.
+3. 같은 릴리스의 체크섬과 설치 파일을 실제로 비교할 수 있으면 결과를 알려줘. 체크섬은 안전성 인증이 아니야.
 4. 설치와 설정 변경 전에 무엇이 바뀌는지 설명하고 내 확인을 받아줘. 보안 경고와 Codex 훅 신뢰는 내가 직접 판단할게.
 5. 보안 기능을 끄거나 격리 속성을 제거하지 마. 관리자 권한, 유료 결제, 알 수 없는 스크립트 실행으로 우회하지 마.
 6. 기존 Codex·Claude 설정과 다른 훅을 보존해. 일반 prepare --apply나 설정 전체 덮어쓰기로 복구하지 마.
@@ -266,13 +266,13 @@ footer { font-size: 13.5px; color: var(--ink-3); border-top: 1px solid var(--lin
   <section aria-labelledby="install">
     <div class="section-head">
       <h2 id="install">Mac 설치</h2>
-      <p class="muted">Intel·Apple Silicon 모두 같은 파일을 받아요. 파일 확인은 <a href="#ai-help">권한 있는 AI에게 도움</a>을 받거나 펼침 안내로 직접 할 수 있어요. 설치·연결은 클릭으로 진행해요. Windows라면 <a href="#windows">Windows 설치</a>로 이동하세요.</p>
+      <p class="muted">Intel·Apple Silicon 모두 같은 파일을 받아요. AI에게 다음 단계를 물어보거나 펼침 안내로 직접 확인할 수 있어요. 파일을 실제로 대조하지 않았다면 검증이 끝난 게 아니에요. 설치·연결은 클릭으로 진행해요. Windows라면 <a href="#windows">Windows 설치</a>로 이동하세요.</p>
     </div>
     <ol class="steps" role="list">
       <li class="step">
         <div class="step-body">
           <h3>파일 내려받기 <span class="time">· 1분</span></h3>
-          <p>위의 <b>Mac 다운로드</b>를 누르면 설치 파일을 바로 받아요. <a href="https://github.com/moonweave/perch-releases/releases/download/v0.1.12/Perch-0.1.12-macOS-universal.dmg.sha256">Mac 파일 확인용 체크섬</a>도 함께 받아 주세요. AI가 로컬 파일을 볼 수 있다면 두 파일 비교를 맡길 수 있어요. <b>Source code</b>나 고지 문서는 설치할 필요가 없어요.</p>
+          <p>위의 <b>Mac 다운로드</b>를 누르면 설치 파일을 바로 받아요. <a href="https://github.com/moonweave/perch-releases/releases/download/v0.1.12/Perch-0.1.12-macOS-universal.dmg.sha256">Mac 파일 확인용 체크섬</a>도 함께 받아 주세요. AI에게 다음 단계를 물어볼 수 있어요. 파일을 실제로 대조하지 않았다면 확인이 끝난 게 아니에요. <b>Source code</b>나 고지 문서는 설치할 필요가 없어요.</p>
           <div class="mock" aria-hidden="true">
             <div class="mock-bar"><i></i><i></i><i></i>github.com · Perch 릴리스 (파일명 예시)</div>
             <div class="mock-body">
@@ -392,7 +392,7 @@ shasum -a 256 -c Perch-*-macOS-universal.dmg.sha256</code></pre><button class="c
     <p class="fine">두 운영체제 모두 같은 이름 뒤에 <code>.sha256</code>이 붙은 파일도 받아요. 찾는 설치 파일이 Assets에 없다면 그 운영체제용 배포가 아직 없는 거예요.</p>
     <ol class="steps" role="list">
       <li class="step"><div class="step-body"><h3>Windows 다운로드 누르기</h3><p>위의 <b>Windows 다운로드</b>로 설치 파일을 바로 받아요. <a href="https://github.com/moonweave/perch-releases/releases/download/v0.1.12/Perch-0.1.12-windows-x64-setup.exe.sha256">Windows 파일 확인용 체크섬</a>도 받아 주세요. 현재 Perch 버전에서 Claude Code 훅을 쓴다면 <a href="https://gitforwindows.org/">Git for Windows</a>도 설치해 두세요.</p></div></li>
-      <li class="step"><div class="step-body"><h3>파일 확인은 AI에게 도움받아도 돼요</h3><p>로컬 파일 접근 권한이 있는 AI에게 위의 <a href="#ai-help">설치 도움 요청문</a>을 보내 두 파일 비교를 맡길 수 있어요. 권한이 없다면 직접 확인 안내를 따라요.</p><details class="card"><summary>직접 확인할게요 — PowerShell 안내 펼치기</summary><p>두 파일을 같은 폴더에 둬요. 파일 탐색기로 그 폴더를 열고, 위쪽 주소 표시줄에 <code>powershell</code>을 입력한 뒤 Enter를 누르면 그 폴더에서 PowerShell이 열려요. 아래 명령을 붙여 넣고 실행하세요. 여러 버전이 있으면 이번 버전의 두 파일만 별도 폴더에 모아 확인해요.</p>
+      <li class="step"><div class="step-body"><h3>AI에게 순서를 물어봐도 돼요</h3><p>위의 <a href="#ai-help">설치 도움 요청문</a>을 보내 화면별 안내를 받을 수 있어요. 체크섬 확인은 설치 파일과 체크섬 파일을 실제로 비교했을 때만 끝난 거예요.</p><details class="card"><summary>직접 확인할게요 — PowerShell 안내 펼치기</summary><p>두 파일을 같은 폴더에 둬요. 파일 탐색기로 그 폴더를 열고, 위쪽 주소 표시줄에 <code>powershell</code>을 입력한 뒤 Enter를 누르면 그 폴더에서 PowerShell이 열려요. 아래 명령을 붙여 넣고 실행하세요. 여러 버전이 있으면 이번 버전의 두 파일만 별도 폴더에 모아 확인해요.</p>
         <div class="cmd"><pre><code id="cmd-win-sha">$files = @(Get-ChildItem -Name 'Perch-*-windows-x64-setup.exe')
 if ($files.Count -ne 1) { throw 'Perch 설치 파일 하나만 두고 다시 실행하세요.' }
 $file = ".\$($files[0])"
