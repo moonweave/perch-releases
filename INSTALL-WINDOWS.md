@@ -8,7 +8,9 @@ Windows 설치 파일은 공개 릴리스에 `Perch-<버전>-windows-x64-setup.e
 
 - Windows 11 (64비트 x64). 현재 Windows 11에서만 설치본을 확인했어요.
 - Codex 또는 Claude Code 중 하나 이상 (이미 쓰고 있어야 해요)
-- Claude Code를 쓴다면 Git for Windows. Claude Code가 훅을 Git Bash로 실행해요.
+  - [Codex 시작 안내](https://developers.openai.com/learn/codex)
+  - [Claude Code 설치 안내](https://docs.anthropic.com/en/docs/claude-code/getting-started)
+- Windows에서 Claude Code를 쓴다면 [Git for Windows](https://gitforwindows.org/)도 필요해요. Claude Code가 훅을 Git Bash로 실행해요.
 
 Perch는 이 PC 안에서만 동작해요. 작업 내용이나 코드를 인터넷으로 보내지 않아요.
 
@@ -64,7 +66,13 @@ Codex를 쓴다면 Perch 훅을 한 번 승인해야 해요. 승인하기 전에
 
 Perch를 업데이트해도 훅 명령은 그대로라 다시 신뢰할 필요가 없어요. 승인이 끝나면 **설정 → 연결**의 Codex가 **Codex 승인 필요**에서 **첫 작업 대기**로 바뀌어요.
 
-## 5. 첫 말풍선 보기
+## 5. 연결됐는지 1분 안에 확인하기
+
+1. 프로젝트 폴더에서 Codex나 Claude Code를 열고, “현재 프로젝트의 파일 이름만 알려줘”처럼 파일을 바꾸지 않는 짧은 질문을 하나 보내요.
+2. Perch 작업함에 그 세션이 나타나면 연결된 거예요. 승인을 기다리면 주황 말풍선, 응답이 오면 보라 말풍선이 보여요.
+3. 아무것도 나타나지 않으면 **설정 → 연결**에서 상태를 확인하고, 도구를 프로젝트 폴더 안에서 새로 시작해요. Codex에 **Codex 승인 필요**가 보이면 위의 훅 신뢰 절차를 먼저 끝내요.
+
+## 6. 첫 말풍선 보기
 
 1. 평소처럼 프로젝트 폴더에서 Codex나 Claude Code를 켜고 일을 하나 시켜요.
 2. 화면 오른쪽 아래에 캐릭터가 나타나고, 무엇을 하는지 작게 보여 줘요.

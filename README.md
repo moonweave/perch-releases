@@ -9,6 +9,8 @@ Perch는 이 PC나 Mac에서 실행한 Codex·Claude Code 세션이 승인을 �
 | macOS 14 이상, Intel·Apple Silicon | `Perch-<버전>-macOS-universal.dmg` | [Mac 설치 안내](https://github.com/moonweave/perch-releases/blob/main/INSTALL.md) |
 | Windows 11 x64 | `Perch-<버전>-windows-x64-setup.exe` | [Windows 설치 안내](https://github.com/moonweave/perch-releases/blob/main/INSTALL-WINDOWS.md) |
 
+Perch를 쓰려면 Codex나 Claude Code가 이 기기에 먼저 설치되어 있어야 해요. 아직 없다면 [Codex 시작 안내](https://developers.openai.com/learn/codex) 또는 [Claude Code 설치 안내](https://docs.anthropic.com/en/docs/claude-code/getting-started)를 먼저 보고, Windows에서 Claude Code를 쓸 때는 [Git for Windows](https://gitforwindows.org/)도 설치하세요.
+
 찾는 파일이 Assets에 없으면 그 운영체제용 공개 설치본은 아직 없는 거예요. 홈서버 빌드나 다른 곳에서 받은 파일은 설치하지 마세요. 베타 앱은 macOS Developer ID 서명과 공증, Windows 코드 서명을 받지 않았을 수 있어요. 보안 기능을 끄지 말고 설치 안내부터 읽어 주세요. 체크섬으로는 파일이 바뀌었는지만 알 수 있어요. 게시자를 인증해 주지는 않아요.
 
 젠 카피바라·모찌 냥이·미니멀 고스트·ORB 에디션 4종이 앱에 들어 있어요. 추가 파일을 받지 않아도 **캐릭터 바꾸기**에서 바로 고를 수 있어요.
