@@ -159,6 +159,8 @@ code { font-family: var(--mono); font-size: 13.5px; padding: 1px 6px; border-rad
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; display: grid; gap: 6px; align-content: start; }
 .card p { font-size: 14.5px; color: var(--ink-2); }
 .card, .card > * { min-width: 0; }
+details.card { display: block; }
+details.card > * + * { margin-top: 12px; }
 .faq { display: grid; gap: 8px; }
 .faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
 .faq summary { cursor: pointer; list-style: none; padding: 14px 44px 14px 18px; font-weight: 600; position: relative; }
