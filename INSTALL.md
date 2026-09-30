@@ -6,6 +6,8 @@ Perch는 Codex나 Claude Code 세션이 승인을 기다리거나 응답을 마�
 
 - macOS 14 이상 Mac (Intel·Apple Silicon 모두)
 - Codex 또는 Claude Code 중 하나 이상 (이미 쓰고 있어야 해요)
+  - [Codex 시작 안내](https://developers.openai.com/learn/codex)
+  - [Claude Code 설치 안내](https://docs.anthropic.com/en/docs/claude-code/getting-started)
 - Mac 로그인 암호 (처음 한 번 열 때 필요해요)
 
 Perch는 이 Mac 안에서만 동작해요. 작업 내용이나 코드를 인터넷으로 보내지 않아요.
@@ -67,7 +69,13 @@ Perch를 열면 **작업함** 창이 보여요. 여기서 한 번 연결하면 �
 
 ‘훅’은 Codex·Claude가 현재 상태를 Perch에 알려 주는 짧은 신호예요. Perch는 설치된 도구의 설정에 자기 훅만 더하고 다른 설정은 건드리지 않아요.
 
-## 6. 첫 말풍선 보기
+## 6. 연결됐는지 1분 안에 확인하기
+
+1. 프로젝트 폴더에서 Codex나 Claude Code를 열고, “현재 프로젝트의 파일 이름만 알려줘”처럼 파일을 바꾸지 않는 짧은 질문을 하나 보내요.
+2. Perch 작업함에 그 세션이 나타나면 연결된 거예요. 승인을 기다리면 주황 말풍선, 응답이 오면 보라 말풍선이 보여요.
+3. 아무것도 나타나지 않으면 **설정 → 연결**에서 상태를 확인하고, 도구를 프로젝트 폴더 안에서 새로 시작해요. Codex에 **Codex 승인 필요**가 보이면 위의 훅 신뢰 절차를 먼저 끝내요.
+
+## 7. 첫 말풍선 보기
 
 1. 평소처럼 프로젝트 폴더에서 Codex나 Claude Code를 켜고 일을 하나 시켜요.
 2. 화면 오른쪽 아래에 캐릭터가 나타나고, 무엇을 하는지 작게 보여 줘요.
