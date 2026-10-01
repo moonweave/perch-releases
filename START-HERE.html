@@ -3,8 +3,10 @@
 <meta property="og:title" content="Perch 시작하기">
 <meta property="og:description" content="내 운영체제에 맞는 설치부터 첫 말풍선 확인까지.">
 <meta property="og:type" content="article">
-<script type="application/json" id="guide-metadata">{"publicTitle":"Perch 시작하기","pageTitle":"Perch 시작하기","route":"Perch 시작하기.html","audience":"처음 설치하는 Mac·Windows 사용자","guideQuestion":"Perch를 설치하고 첫 개발 세션 알림을 어떻게 확인하나요?","visibility":"private","creator":{"displayName":"Perch","handle":"moonweave","watermark":"Perch"}}</script>
-<script type="application/json" id="guide-sources">{"checkedAt":"2026-10-01","claims":[{"id":"release","claim":"v0.1.15 공개 후 macOS Universal DMG와 Windows x64 설치 파일을 제공한다.","sourceUrl":"https://github.com/moonweave/perch-releases/releases/tag/v0.1.15","verifiedAt":"2026-10-01","volatility":"high"},{"id":"mac-guide","claim":"macOS 베타는 Developer ID 서명과 공증이 없고 Codex 훅 신뢰는 앱 또는 CLI에서 검토한다.","sourceUrl":"https://github.com/moonweave/perch-releases/blob/main/INSTALL.md","verifiedAt":"2026-09-30","volatility":"high"},{"id":"windows-guide","claim":"Windows 11 x64 설치와 기본 캐릭터 4종, Windows 개발 세션의 관찰 범위를 안내한다.","sourceUrl":"https://github.com/moonweave/perch-releases/blob/main/INSTALL-WINDOWS.md","verifiedAt":"2026-09-30","volatility":"high"},{"id":"claude-start","claim":"Claude Code는 일반 채팅과 구별되는 개발 도구이며 별도 계정 이용 조건이 있다.","sourceUrl":"https://code.claude.com/docs/en/quickstart","verifiedAt":"2026-09-30","volatility":"high"}]}</script>
+<meta property="og:url" content="https://github.com/moonweave/perch-releases/blob/main/START-HERE.md">
+<link rel="canonical" href="https://github.com/moonweave/perch-releases/blob/main/START-HERE.md">
+<script type="application/json" id="guide-metadata">{"publicTitle":"Perch 시작하기","pageTitle":"Perch 시작하기","route":"START-HERE.html","audience":"처음 설치하는 Mac·Windows 사용자","guideQuestion":"Perch를 설치하고 첫 개발 세션 알림을 어떻게 확인하나요?","visibility":"public","creator":{"displayName":"Perch","handle":"moonweave","watermark":"Perch"}}</script>
+<script type="application/json" id="guide-sources">{"checkedAt":"2026-10-01","claims":[{"id":"release","claim":"v0.1.17는 macOS Universal DMG와 Windows x64 설치 파일을 제공한다.","sourceUrl":"https://github.com/moonweave/perch-releases/releases/tag/v0.1.17","verifiedAt":"2026-10-01","volatility":"high"},{"id":"mac-guide","claim":"macOS 베타는 Developer ID 서명과 공증이 없고 Codex 훅 신뢰는 앱 또는 CLI에서 검토한다.","sourceUrl":"https://github.com/moonweave/perch-releases/blob/main/INSTALL.md","verifiedAt":"2026-10-01","volatility":"high"},{"id":"windows-guide","claim":"Windows 11 x64 설치와 기본 캐릭터 4종, Windows 개발 세션의 관찰 범위를 안내한다.","sourceUrl":"https://github.com/moonweave/perch-releases/blob/main/INSTALL-WINDOWS.md","verifiedAt":"2026-10-01","volatility":"high"},{"id":"claude-start","claim":"Claude Code는 일반 채팅과 구별되는 개발 도구이며 별도 계정 이용 조건이 있다.","sourceUrl":"https://code.claude.com/docs/en/quickstart","verifiedAt":"2026-10-01","volatility":"high"}]}</script>
 <style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 <title>Perch 시작하기</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -178,6 +180,7 @@ details.card > * + * { margin-top: 12px; }
 .cmd.prompt .copy { justify-self: start; }
 #prompt-install { white-space: pre-wrap; overflow-wrap: anywhere; }
 nav { display: flex; flex-wrap: wrap; gap: 10px 18px; font-size: 14px; }
+.table-wrap { max-width: 100%; overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font-size: 14px; }
 caption { text-align: left; font-weight: 600; margin-bottom: 8px; }
 th, td { text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); padding: 10px 8px; overflow-wrap: anywhere; }
@@ -209,11 +212,11 @@ footer { font-size: 13.5px; color: var(--ink-3); border-top: 1px solid var(--lin
         <h1>Perch 시작하기</h1>
         <p class="lede">Codex나 Claude Code에게 일을 맡겨 두면, 중간에 “이거 해도 돼요?” 하고 멈춰 있을 때가 있어요. Perch는 화면 구석의 작은 캐릭터로 승인 대기와 응답 도착을 알려 주는 Mac·Windows 앱이에요.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/moonweave/perch-releases/releases/download/v0.1.15/Perch-0.1.15-macOS-universal.dmg" rel="noopener">
+          <a class="cta" href="https://github.com/moonweave/perch-releases/releases/download/v0.1.17/Perch-0.1.17-macOS-universal.dmg" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
             Mac 다운로드
           </a>
-          <a class="cta" href="https://github.com/moonweave/perch-releases/releases/download/v0.1.15/Perch-0.1.15-windows-x64-setup.exe" rel="noopener">Windows 다운로드</a>
+          <a class="cta" href="https://github.com/moonweave/perch-releases/releases/download/v0.1.17/Perch-0.1.17-windows-x64-setup.exe" rel="noopener">Windows 다운로드</a>
           <span class="fine">무료 베타 · 도구가 설치되어 있다면 약 5~10분</span>
         </div>
       </div>
@@ -228,20 +231,20 @@ footer { font-size: 13.5px; color: var(--ink-3); border-top: 1px solid var(--lin
       <div class="fact"><b>이 기기 안에서만</b><span>Perch가 작업 내용을 인터넷으로 보내지 않아요</span></div>
     </div>
     <nav aria-label="가이드 목차"><a href="#ai-help">AI에게 도움받기</a><a href="#install">Mac 설치</a><a href="#windows">Windows 설치</a><a href="#connect">도구 연결</a><a href="#characters">캐릭터 선택</a><a href="#faq">문제 해결</a></nav>
-    <p class="fine">버튼은 공개된 <b>v0.1.15</b> 설치 파일로 바로 연결돼요. 파일 목록에서 고를 필요는 없어요. 아직 공개 전이라면 <a href="https://github.com/moonweave/perch-releases/releases/latest">최신 릴리스</a>에서 받을 수 있는 버전을 확인하세요.</p>
+    <p class="fine">버튼은 검수한 <b>v0.1.17</b> 설치 파일로 바로 연결돼요. 파일 목록에서 고를 필요는 없어요. 다른 버전은 <a href="https://github.com/moonweave/perch-releases/releases/latest">최신 릴리스</a>에서 확인하세요.</p>
     <p class="fine">Codex·Claude Code를 아직 쓰지 않는다면 <a href="https://developers.openai.com/learn/codex">Codex 시작 안내</a> 또는 <a href="https://code.claude.com/docs/en/quickstart">Claude Code 시작 안내</a>부터 확인해 주세요. 일반 Claude 채팅이 아니라 <b>Code 모드나 Claude Code 개발 세션</b>을 관찰해요. Perch는 무료이고, Codex·Claude 이용 조건과 비용은 별개예요.</p>
   </header>
 
   <section aria-labelledby="ai-help">
     <div class="section-head"><h2 id="ai-help">명령어가 낯설면 AI와 같이 설치해요</h2><p class="muted">기본 흐름은 <b>내 기기용 다운로드 → 파일 확인 → 설치 → Perch 안에서 연결</b>이에요. 아래 요청문을 복사해 이미 쓰는 Codex나 Claude에 보내면, 한 단계씩 도움받을 수 있어요. AI 이용료나 사용량은 별개이고 새 유료 도구를 살 필요는 없어요.</p></div>
-    <div class="grid-2"><div class="card"><h3>화면별 안내</h3><p>AI에게 아래 요청문을 보내고 화면에 보이는 내용을 알려 주면 다음 단계를 물어볼 수 있어요. 화면을 공유한다면 요청 내용·계정 정보·경로를 먼저 가려요.</p></div><div class="card"><h3>파일 확인</h3><p>설치 파일과 <code>.sha256</code> 파일을 실제로 비교한 경우에만 확인이 끝난 거예요. AI가 직접 대조하지 않았다면 검증됐다고 볼 수 없어요. 설치나 보안 경고 허용, 훅 변경, Codex 신뢰는 내가 내용을 확인한 뒤 진행해요.</p></div></div>
+    <div class="grid-2"><div class="card"><h3>화면에서 막혔을 때</h3><p>경고 문구나 버튼 이름을 AI에게 보내고 다음에 무엇을 누를지 물어보세요. 화면을 공유한다면 계정 정보·경로·요청 내용을 먼저 가려요.</p></div><div class="card"><h3>설치 파일을 확인할 때</h3><p>체크섬 비교를 부탁할 땐 설치 파일과 <code>.sha256</code> 파일을 실제로 읽어 대조해 달라고 해요. 파일을 직접 확인할 수 없는 환경이면 확인했다고 말하지 말고, 내가 할 순서만 안내해 달라고 해요.</p></div></div>
     <div class="cmd prompt"><pre><code id="prompt-install">Perch 무료 베타 설치를 도와줘. 나는 터미널과 PowerShell에 익숙하지 않아.
 공식 안내: https://github.com/moonweave/perch-releases/blob/main/START-HERE.md
-공식 배포: https://github.com/moonweave/perch-releases/releases/tag/v0.1.15
+공식 배포: https://github.com/moonweave/perch-releases/releases/tag/v0.1.17
 
 1. 내 운영체제를 먼저 확인하고 Mac 또는 Windows x64 설치 파일 하나를 골라줘.
-2. 내가 직접 할 클릭을 한 단계씩 알려줘. 설치 파일과 체크섬을 실제로 비교할 수 없다면 직접 확인했다고 말하지 마.
-3. 같은 릴리스의 체크섬과 설치 파일을 실제로 비교할 수 있으면 결과를 알려줘. 체크섬은 안전성 인증이 아니야.
+2. 내가 직접 할 클릭을 한 단계씩 알려줘. 설치 파일을 실제로 확인하지 않았다면 비교했다고 말하지 마.
+3. 확인을 부탁하면 같은 릴리스의 체크섬과 실제 설치 파일을 비교하고 결과를 알려줘. 체크섬은 안전성 인증이 아니야.
 4. 설치와 설정 변경 전에 무엇이 바뀌는지 설명하고 내 확인을 받아줘. 보안 경고와 Codex 훅 신뢰는 내가 직접 판단할게.
 5. 보안 기능을 끄거나 격리 속성을 제거하지 마. 관리자 권한, 유료 결제, 알 수 없는 스크립트 실행으로 우회하지 마.
 6. 기존 Codex·Claude 설정과 다른 훅을 보존해. 일반 prepare --apply나 설정 전체 덮어쓰기로 복구하지 마.
@@ -266,22 +269,22 @@ footer { font-size: 13.5px; color: var(--ink-3); border-top: 1px solid var(--lin
   <section aria-labelledby="install">
     <div class="section-head">
       <h2 id="install">Mac 설치</h2>
-      <p class="muted">Intel·Apple Silicon 모두 같은 파일을 받아요. AI에게 다음 단계를 물어보거나 펼침 안내로 직접 확인할 수 있어요. 파일을 실제로 대조하지 않았다면 검증이 끝난 게 아니에요. 설치·연결은 클릭으로 진행해요. Windows라면 <a href="#windows">Windows 설치</a>로 이동하세요.</p>
+      <p class="muted">Intel·Apple Silicon 모두 같은 파일을 받아요. 파일을 대조하고 싶다면 <a href="#ai-help">AI에게 실제 비교를 부탁</a>하거나 펼침 안내를 직접 따라요. 설치·연결은 클릭으로 진행해요. Windows라면 <a href="#windows">Windows 설치</a>로 이동하세요.</p>
     </div>
     <ol class="steps" role="list">
       <li class="step">
         <div class="step-body">
           <h3>파일 내려받기 <span class="time">· 1분</span></h3>
-          <p>위의 <b>Mac 다운로드</b>를 누르면 설치 파일을 바로 받아요. <a href="https://github.com/moonweave/perch-releases/releases/download/v0.1.15/Perch-0.1.15-macOS-universal.dmg.sha256">Mac 파일 확인용 체크섬</a>도 함께 받아 주세요. AI에게 다음 단계를 물어볼 수 있어요. 파일을 실제로 대조하지 않았다면 확인이 끝난 게 아니에요. <b>Source code</b>나 고지 문서는 설치할 필요가 없어요.</p>
+          <p>위의 <b>Mac 다운로드</b>를 누르면 설치 파일을 받아요. 원하면 <a href="https://github.com/moonweave/perch-releases/releases/download/v0.1.17/Perch-0.1.17-macOS-universal.dmg.sha256">Mac 파일 확인용 체크섬</a>도 받아요. AI에게 맡길 때는 두 파일을 실제로 대조했는지 확인하세요. <b>Source code</b>나 고지 문서는 설치할 필요가 없어요.</p>
           <div class="mock" aria-hidden="true">
             <div class="mock-bar"><i></i><i></i><i></i>github.com · Perch 릴리스 (파일명 예시)</div>
             <div class="mock-body">
-              <div class="pane-row hl"><span>Perch-0.1.15-macOS-universal.dmg<small>Mac 설치 파일 · 실제 릴리스 버전을 확인해요</small></span><span class="mac-btn">받기</span></div>
-              <div class="pane-row"><span>Perch-0.1.15-macOS-universal.dmg.sha256<small>설치 파일이 바뀌지 않았는지 확인하는 파일</small></span></div>
+              <div class="pane-row hl"><span>Perch-0.1.17-macOS-universal.dmg<small>Mac 설치 파일 · 이 파일 하나면 돼요</small></span><span class="mac-btn">받기</span></div>
+              <div class="pane-row"><span>Perch-0.1.17-macOS-universal.dmg.sha256<small>원할 때 파일 변경 여부를 확인하는 파일</small></span></div>
               <div class="pane-row"><span>INSTALL.md · RECOVERY.md …<small>공식 설치·문제 해결 문서</small></span></div>
             </div>
           </div>
-          <details class="card"><summary>파일 확인을 직접 할게요 — 터미널 안내 펼치기</summary><p>두 파일을 다운로드 폴더에 둬요. Perch DMG가 여러 버전이면 이번 버전만 별도 폴더로 옮겨 확인하세요. <b>터미널</b> 앱을 열고 아래 명령을 복사해 실행해요. 별도 폴더를 쓴다면 <code>cd</code> 뒤의 경로도 그 폴더로 바꿔요.</p>
+          <details class="card"><summary>선택: 파일이 바뀌었는지 직접 확인할게요 — 터미널 안내</summary><p>두 파일을 다운로드 폴더에 둬요. Perch DMG가 여러 버전이면 이번 버전만 별도 폴더로 옮겨 확인하세요. <b>터미널</b> 앱을 열고 아래 명령을 복사해 실행해요. 별도 폴더를 쓴다면 <code>cd</code> 뒤의 경로도 그 폴더로 바꿔요.</p>
           <div class="cmd"><pre><code id="cmd-sha">cd ~/Downloads
 shasum -a 256 -c Perch-*-macOS-universal.dmg.sha256</code></pre><button class="copy" type="button" data-copy="cmd-sha" aria-label="Mac 파일 확인 명령 복사">복사</button></div>
           <p class="fine"><b>OK</b>가 나오면 다음 단계로 가요. 다른 결과가 나오면 열지 말고 공식 릴리스에서 다시 받으세요. 체크섬은 파일 변경 여부만 확인하며 게시자를 인증하거나 보안 경고를 없애지는 않아요.</p>
@@ -384,15 +387,15 @@ shasum -a 256 -c Perch-*-macOS-universal.dmg.sha256</code></pre><button class="c
 
   <section aria-labelledby="windows">
     <div class="section-head"><h2 id="windows">Windows 설치</h2><p class="muted">Windows 11 x64용이에요. Windows ARM과 WSL 안의 세션은 현재 지원 대상이 아니에요.</p></div>
-    <table>
+    <div class="table-wrap"><table>
       <caption>운영체제별 받을 파일</caption>
       <thead><tr><th scope="col">기기</th><th scope="col">설치 파일</th></tr></thead>
       <tbody><tr><th scope="row">Mac</th><td><code>Perch-&lt;버전&gt;-macOS-universal.dmg</code></td></tr><tr><th scope="row">Windows 11 x64</th><td><code>Perch-&lt;버전&gt;-windows-x64-setup.exe</code></td></tr></tbody>
-    </table>
-    <p class="fine">두 운영체제 모두 같은 이름 뒤에 <code>.sha256</code>이 붙은 파일도 받아요. 찾는 설치 파일이 Assets에 없다면 그 운영체제용 배포가 아직 없는 거예요.</p>
+    </table></div>
+    <p class="fine">파일이 바뀌었는지 확인하고 싶다면 같은 이름 뒤에 <code>.sha256</code>이 붙은 파일을 추가로 받아요. 설치에 필요한 파일은 운영체제용 설치 파일 하나예요. 그 파일이 Assets에 없다면 해당 운영체제용 배포가 아직 없는 거예요.</p>
     <ol class="steps" role="list">
-      <li class="step"><div class="step-body"><h3>Windows 다운로드 누르기</h3><p>위의 <b>Windows 다운로드</b>로 설치 파일을 바로 받아요. <a href="https://github.com/moonweave/perch-releases/releases/download/v0.1.15/Perch-0.1.15-windows-x64-setup.exe.sha256">Windows 파일 확인용 체크섬</a>도 받아 주세요. 현재 Perch 버전에서 Claude Code 훅을 쓴다면 <a href="https://gitforwindows.org/">Git for Windows</a>도 설치해 두세요.</p></div></li>
-      <li class="step"><div class="step-body"><h3>AI에게 순서를 물어봐도 돼요</h3><p>위의 <a href="#ai-help">설치 도움 요청문</a>을 보내 화면별 안내를 받을 수 있어요. 체크섬 확인은 설치 파일과 체크섬 파일을 실제로 비교했을 때만 끝난 거예요.</p><details class="card"><summary>직접 확인할게요 — PowerShell 안내 펼치기</summary><p>두 파일을 같은 폴더에 둬요. 파일 탐색기로 그 폴더를 열고, 위쪽 주소 표시줄에 <code>powershell</code>을 입력한 뒤 Enter를 누르면 그 폴더에서 PowerShell이 열려요. 아래 명령을 붙여 넣고 실행하세요. 여러 버전이 있으면 이번 버전의 두 파일만 별도 폴더에 모아 확인해요.</p>
+      <li class="step"><div class="step-body"><h3>Windows 설치 파일 받기</h3><p>위의 <b>Windows 다운로드</b>를 눌러요. 원하면 <a href="https://github.com/moonweave/perch-releases/releases/download/v0.1.17/Perch-0.1.17-windows-x64-setup.exe.sha256">Windows 파일 확인용 체크섬</a>도 받아요. 현재 Perch 버전에서 Claude Code 훅을 쓴다면 <a href="https://gitforwindows.org/">Git for Windows</a>도 설치해 두세요.</p></div></li>
+      <li class="step"><div class="step-body"><h3>파일 확인은 선택이에요</h3><p>위의 <a href="#ai-help">설치 도움 요청문</a>으로 AI에게 두 파일을 실제로 대조해 달라고 부탁할 수 있어요. 비교가 끝나지 않았다면 확인된 것으로 여기지 마세요. 직접 확인하려면 아래 PowerShell 안내를 펼쳐요.</p><details class="card"><summary>직접 확인할게요 — PowerShell 안내 펼치기</summary><p>두 파일을 같은 폴더에 둬요. 파일 탐색기로 그 폴더를 열고, 위쪽 주소 표시줄에 <code>powershell</code>을 입력한 뒤 Enter를 누르면 그 폴더에서 PowerShell이 열려요. 아래 명령을 붙여 넣고 실행하세요. 여러 버전이 있으면 이번 버전의 두 파일만 별도 폴더에 모아 확인해요.</p>
         <div class="cmd"><pre><code id="cmd-win-sha">$files = @(Get-ChildItem -Name 'Perch-*-windows-x64-setup.exe')
 if ($files.Count -ne 1) { throw 'Perch 설치 파일 하나만 두고 다시 실행하세요.' }
 $file = ".\$($files[0])"
@@ -469,7 +472,7 @@ if ($actual -ne $expected) { throw '체크섬이 다릅니다. 설치하지 마�
   </section>
 
   <footer>
-    <span>Perch 무료 베타 · Mac·Windows 설치 안내 · 확인 기준: v0.1.15, 2026-10-01. <a href="https://github.com/moonweave/perch-releases/blob/main/BETA-EVALUATION-RIGHTS.md">베타 이용 조건</a>을 확인해 주세요.</span>
+    <span>Perch 무료 베타 · Mac·Windows 설치 안내 · 확인 기준: v0.1.17, 2026-10-01. <a href="https://github.com/moonweave/perch-releases/blob/main/BETA-EVALUATION-RIGHTS.md">베타 이용 조건</a>을 확인해 주세요.</span>
     <span>공식 배포처: <a href="https://github.com/moonweave/perch-releases/releases" target="_blank" rel="noopener">github.com/moonweave/perch-releases</a> · 버그와 의견은 <a href="https://github.com/moonweave/perch-releases/issues" target="_blank" rel="noopener">GitHub Issues</a>로 보내 주세요. 이슈는 누구나 볼 수 있으니 파일 경로나 요청 내용은 적지 마세요.</span>
   </footer>
 </article></main>

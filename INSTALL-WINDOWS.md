@@ -20,11 +20,11 @@ WSL 안에서 실행한 Codex·Claude 세션은 아직 보지 못해요. Windows
 
 ## 1. 내려받기
 
-[최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest) 페이지 아래쪽 **Assets**에서 `Perch-<버전>-windows-x64-setup.exe`를 받으세요. 같은 이름 뒤에 `.sha256`이 붙은 파일도 함께 받아요.
+[최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest) 페이지 아래쪽 **Assets**에서 `Perch-<버전>-windows-x64-setup.exe`를 받아요. 파일이 바뀌었는지 확인하고 싶다면 같은 이름 뒤에 `.sha256`이 붙은 파일도 받아요. 설치에는 `.exe` 하나면 돼요.
 
-## 2. 파일 확인
+## 2. 선택: 파일 확인
 
-같은 릴리스에서 설치 파일과 `.sha256` 파일을 받은 뒤 PowerShell에서 확인해요.
+원할 때 같은 릴리스에서 받은 설치 파일과 `.sha256` 파일을 PowerShell에서 비교해요. 확인 단계를 건너뛰려면 다음 설치 단계로 가면 돼요.
 
 ```powershell
 $files = @(Get-ChildItem -Name 'Perch-*-windows-x64-setup.exe')
@@ -42,7 +42,7 @@ if ($actual -ne $expected) { throw '체크섬이 다릅니다. 설치하지 마�
 
 Perch는 아직 코드 서명을 받지 않은 베타예요. Windows가 게시자를 확인하지 못했다는 경고를 보여 줄 수 있어요. 이 경고만으로 파일의 안전성을 판단할 수는 없어요. 공식 릴리스에서 받은 파일인지 먼저 확인해 주세요.
 
-1. 공식 릴리스에서 설치 파일과 `.sha256` 파일을 함께 받았는지 확인해요. 위의 **파일 확인**을 마친 뒤 설치 파일을 열어요.
+1. 공식 릴리스에서 받은 설치 파일인지 확인해요. 파일 확인을 선택했다면 위에서 `OK`가 나온 뒤 설치 파일을 열어요.
 2. Microsoft Defender SmartScreen이 게시자를 확인할 수 없다고 알리면, 베타 설치를 계속할지 결정해요. 설치하기로 했다면 **추가 정보 → 실행**을 눌러요.
 3. 설치 창의 안내를 따라요. 관리자 권한은 필요 없고, 내 계정에만 설치돼요.
 

@@ -16,11 +16,11 @@ Perch는 이 Mac 안에서만 동작해요. 작업 내용이나 코드를 인터
 
 ## 1. 내려받기
 
-[최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest)의 **Assets**에서 `Perch-<버전>-macOS-universal.dmg`와 이름이 같은 `.sha256` 파일을 받아요. DMG가 없으면 아직 Mac 설치 파일이 공개되지 않은 거예요.
+[최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest)의 **Assets**에서 `Perch-<버전>-macOS-universal.dmg`를 받아요. 파일이 바뀌었는지 확인하고 싶다면 같은 이름 뒤에 `.sha256`이 붙은 파일도 받아요. 설치에는 DMG 하나면 돼요. DMG가 없으면 아직 Mac 설치 파일이 공개되지 않은 거예요.
 
-## 2. 파일 확인
+## 2. 선택: 파일 확인
 
-설치하기 전에 내려받은 파일이 바뀌지 않았는지 확인해요. 터미널에서 아래 명령을 실행하세요. 다운로드 폴더에 Perch DMG가 여러 개 있으면 한 버전만 남긴 뒤 확인해요.
+원할 때 내려받은 파일이 바뀌지 않았는지 확인해요. `.sha256` 파일을 받지 않았다면 이 단계는 건너뛰고 설치로 가면 돼요. 확인하려면 터미널에서 아래 명령을 실행하세요. 다운로드 폴더에 Perch DMG가 여러 개 있으면 한 버전만 남긴 뒤 확인해요.
 
 ```bash
 cd ~/Downloads
