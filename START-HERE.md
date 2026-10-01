@@ -2,9 +2,9 @@
 
 ## 내 기기에 맞는 버튼 하나만 누르세요
 
-**[Mac 다운로드](https://github.com/moonweave/perch-releases/releases/download/v0.1.14/Perch-0.1.14-macOS-universal.dmg)** · **[Windows 다운로드](https://github.com/moonweave/perch-releases/releases/download/v0.1.14/Perch-0.1.14-windows-x64-setup.exe)**
+**[Mac 다운로드](https://github.com/moonweave/perch-releases/releases/download/v0.1.15/Perch-0.1.15-macOS-universal.dmg)** · **[Windows 다운로드](https://github.com/moonweave/perch-releases/releases/download/v0.1.15/Perch-0.1.15-windows-x64-setup.exe)**
 
-v0.1.14 기준. Mac은 macOS 14 이상(Intel·Apple Silicon), Windows는 Windows 11 x64용이에요. Source code, README, 고지 문서는 설치 파일이 아니에요.
+v0.1.15 공개 기준. Mac은 macOS 14 이상(Intel·Apple Silicon), Windows는 Windows 11 x64용이에요. Source code, README, 고지 문서는 설치 파일이 아니에요. 아직 v0.1.15가 공개되지 않았다면 [최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest)에서 받을 수 있는 버전을 확인하세요.
 
 기본 흐름은 **다운로드 → 파일 확인 → 설치 → Perch 설정에서 연결 → 첫 요청 확인**입니다. Codex나 Claude Code는 먼저 설치되어 있어야 해요. 일반 Claude 채팅이 아니라 이 기기에서 실행하는 개발 세션을 관찰해요. Perch는 무료이고 Codex·Claude 이용 조건과 비용은 별개예요.
 
@@ -20,7 +20,7 @@ v0.1.14 기준. Mac은 macOS 14 이상(Intel·Apple Silicon), Windows는 Windows
 ```text
 Perch 무료 베타 설치를 도와줘. 터미널과 PowerShell은 낯설어.
 공식 안내: https://github.com/moonweave/perch-releases/blob/main/START-HERE.md
-공식 파일: https://github.com/moonweave/perch-releases/releases/tag/v0.1.14
+공식 파일: https://github.com/moonweave/perch-releases/releases/tag/v0.1.15
 
 내 운영체제부터 확인하고 맞는 설치 파일 하나를 골라줘.
 설치 파일과 체크섬 파일을 실제로 비교할 수 있으면 결과를 알려줘. 비교할 수 없다면 직접 확인했다고 말하지 말고 내가 할 클릭을 한 단계씩 안내해줘.
@@ -37,7 +37,7 @@ AI가 설치를 끝냈다고 말해도, Perch가 실제로 열리고 새 작업�
 
 ## 혼자 설치하려면
 
-1. 위의 내 기기용 버튼으로 설치 파일을 받아요. 확인용 파일도 함께 받아요: [Mac 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.14/Perch-0.1.14-macOS-universal.dmg.sha256) · [Windows 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.14/Perch-0.1.14-windows-x64-setup.exe.sha256).
+1. 위의 내 기기용 버튼으로 설치 파일을 받아요. 확인용 파일도 함께 받아요: [Mac 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.15/Perch-0.1.15-macOS-universal.dmg.sha256) · [Windows 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.15/Perch-0.1.15-windows-x64-setup.exe.sha256).
 2. AI에게 다음 단계를 물어보거나 [Mac 상세 안내](INSTALL.md#2-파일-확인) / [Windows 상세 안내](INSTALL-WINDOWS.md#2-파일-확인)에 따라 직접 확인해요. 파일을 실제로 비교하지 않았다면 검증이 끝난 게 아니에요.
 3. Mac은 DMG를 열고 Perch를 Applications로 옮겨요. Windows는 설치 파일을 열어 현재 계정에 설치해요.
 4. 현재 베타는 서명·공증이 없어 OS 경고가 나올 수 있어요. 설치하기로 했다면 상세 안내를 따라 직접 판단하세요. 스마트 앱 컨트롤이나 관리 정책이 차단하면 멈춰 주세요. 보안 기능을 끄지 마세요.
@@ -60,4 +60,4 @@ Windows는 직접 실행한 개발 세션만 관찰하고 WSL은 지원하지 �
 
 [베타 이용 조건](BETA-EVALUATION-RIGHTS.md) · [전체 릴리스](https://github.com/moonweave/perch-releases/releases) · [버그 신고](https://github.com/moonweave/perch-releases/issues). 공개 이슈에는 개인정보나 작업 원문을 올리지 마세요.
 
-확인 기준: v0.1.14 · 2026-09-30. 근거: [공식 릴리스](https://github.com/moonweave/perch-releases/releases/tag/v0.1.14), [Mac 설치 안내](INSTALL.md), [Windows 설치 안내](INSTALL-WINDOWS.md).
+확인 기준: v0.1.15 · 2026-10-01. 근거: [공식 릴리스](https://github.com/moonweave/perch-releases/releases/tag/v0.1.15), [Mac 설치 안내](INSTALL.md), [Windows 설치 안내](INSTALL-WINDOWS.md).
