@@ -4,14 +4,14 @@ Perch는 이 Mac이나 PC에서 실행한 Codex·Claude Code 개발 세션이 �
 
 ## 필요한 설치 파일 하나만 받으세요
 
-**[Mac 설치 파일](https://github.com/moonweave/perch-releases/releases/download/v0.1.19/Perch-0.1.19-macOS-universal.dmg)** · **[Windows 설치 파일](https://github.com/moonweave/perch-releases/releases/download/v0.1.19/Perch-0.1.19-windows-x64-setup.exe)**
+**[Mac 설치 파일](https://github.com/moonweave/perch-releases/releases/download/v0.1.20/Perch-0.1.20-macOS-universal.dmg)** · **[Windows 설치 파일](https://github.com/moonweave/perch-releases/releases/download/v0.1.20/Perch-0.1.20-windows-x64-setup.exe)**
 
 설치하려는 기기에 맞는 파일 하나면 돼요. `.sha256` 파일은 원할 때 설치 파일이 바뀌지 않았는지 확인하는 용도예요. Source code 압축 파일과 문서·고지 파일은 설치에 필요하지 않아요. 파일이 보이지 않으면 [최신 릴리스](https://github.com/moonweave/perch-releases/releases/latest)에 해당 운영체제용 공개 설치본이 아직 없는 거예요.
 
 | 기기 | 지원 버전 | 설치 파일 |
 |---|---|---|
-| Mac (Intel·Apple Silicon) | macOS 14 이상 | `Perch-0.1.19-macOS-universal.dmg` |
-| Windows PC | Windows 11 x64 | `Perch-0.1.19-windows-x64-setup.exe` |
+| Mac (Intel·Apple Silicon) | macOS 14 이상 | `Perch-0.1.20-macOS-universal.dmg` |
+| Windows PC | Windows 11 x64 | `Perch-0.1.20-windows-x64-setup.exe` |
 
 Codex 또는 Claude Code가 먼저 설치되어 있어야 해요. 아직 없다면 [Codex 시작 안내](https://developers.openai.com/learn/codex) 또는 [Claude Code 설치 안내](https://docs.anthropic.com/en/docs/claude-code/getting-started)를 확인하세요. Windows에서 Claude Code를 쓴다면 [Git for Windows](https://gitforwindows.org/)도 필요해요. Windows의 WSL 세션은 아직 지원하지 않아요.
 
