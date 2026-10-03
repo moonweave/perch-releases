@@ -2,7 +2,7 @@
 
 ## 내 기기에 맞는 버튼 하나만 누르세요
 
-**[Mac 설치 파일 받기](https://github.com/moonweave/perch-releases/releases/download/v0.1.21/Perch-0.1.21-macOS-universal.dmg)** · **[Windows 설치 파일 받기](https://github.com/moonweave/perch-releases/releases/download/v0.1.21/Perch-0.1.21-windows-x64-setup.exe)**
+**[Mac 설치 파일 받기](https://github.com/moonweave/perch-releases/releases/download/v0.1.23/Perch-0.1.23-macOS-universal.dmg)** · **[Windows 설치 파일 받기](https://github.com/moonweave/perch-releases/releases/download/v0.1.23/Perch-0.1.23-windows-x64-setup.exe)**
 
 Mac은 macOS 14 이상(Intel·Apple Silicon), Windows는 Windows 11 x64용이에요. 설치에는 내 기기에 맞는 설치 파일 하나면 돼요. `.sha256` 파일은 원할 때 파일이 바뀌지 않았는지 확인하는 용도예요. Source code 압축 파일과 문서·고지 파일은 설치할 필요가 없어요.
 
@@ -19,7 +19,7 @@ Mac은 macOS 14 이상(Intel·Apple Silicon), Windows는 Windows 11 x64용이에
 ```text
 Perch 무료 베타 설치를 도와줘. 터미널과 PowerShell은 낯설어.
 공식 안내: https://github.com/moonweave/perch-releases/blob/main/START-HERE.md
-공식 파일: https://github.com/moonweave/perch-releases/releases/tag/v0.1.21
+공식 파일: https://github.com/moonweave/perch-releases/releases/tag/v0.1.23
 
 내 운영체제부터 확인하고 맞는 설치 파일 하나를 골라줘.
 설치 파일을 확인하고 싶다면 같은 릴리스의 체크섬과 실제 파일을 비교해. 파일을 읽거나 명령을 실행할 수 없는 환경이면 확인했다고 말하지 말고 내가 직접 할 순서를 알려줘.
@@ -36,7 +36,7 @@ AI가 설치를 끝냈다고 말해도, Perch가 실제로 열리고 새 작업�
 
 ## 혼자 설치하려면
 
-1. 위의 내 기기용 설치 파일을 받아요. 원하면 같은 릴리스에서 체크섬 파일도 받아요: [Mac 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.21/Perch-0.1.21-macOS-universal.dmg.sha256) · [Windows 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.21/Perch-0.1.21-windows-x64-setup.exe.sha256).
+1. 위의 내 기기용 설치 파일을 받아요. 원하면 같은 릴리스에서 체크섬 파일도 받아요: [Mac 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.23/Perch-0.1.23-macOS-universal.dmg.sha256) · [Windows 체크섬](https://github.com/moonweave/perch-releases/releases/download/v0.1.23/Perch-0.1.23-windows-x64-setup.exe.sha256).
 2. 필요하면 [Mac 상세 안내](INSTALL.md#2-파일-확인) / [Windows 상세 안내](INSTALL-WINDOWS.md#2-파일-확인)에 따라 파일을 확인해요. 체크섬은 파일이 바뀌었는지 확인할 뿐 게시자를 인증하지 않아요.
 3. Mac은 DMG를 열고 Perch를 Applications로 옮겨요. Windows는 이전 Perch를 알림 영역 메뉴의 **Perch 종료**로 종료한 뒤, 설치 파일을 열어 현재 계정에 설치해요.
 4. 현재 베타는 macOS Developer ID 서명·공증과 Windows 코드 서명이 없어 운영체제 경고가 나올 수 있어요. 공식 릴리스에서 받은 파일인지 확인하고, 계속할지 직접 판단하세요. Smart App Control이나 관리 정책이 차단하면 멈춰요. 보안 기능을 끄지 마세요.
@@ -49,6 +49,12 @@ Windows는 직접 실행한 개발 세션만 관찰하고 WSL은 지원하지 �
 
 캐릭터 우클릭 → **캐릭터 바꾸기** → **Pet → 기본 캐릭터**에서 골라요. 젠 카피바라·모찌 냥이·미니멀 고스트·ORB 에디션 4종이 들어 있으니 별도 팩은 필요 없어요.
 
+## 내 그림으로 캐릭터 만들기
+
+**Pet → 내 캐릭터 만들기**에서 대기 그림 한 장을 넣으면 바로 시작할 수 있어요. **AI로 그림 준비하기**에 원하는 모습을 적고 **제작 요청문 복사**를 누르세요. 이미지 생성 AI에 붙여 넣으면 상태별 그림, 인사 2장, 시선 16장을 빠뜨리지 않도록 요청할 수 있어요.
+
+받은 그림을 앱에 넣고 **팩 확인하고 미리보기 → 이 캐릭터 쓰기**를 누르면 적용돼요. **팩 파일 저장**으로 보관하거나 다른 컴퓨터에서 가져올 수도 있어요. 시선 그림이 없으면 마우스 방향에 따라 고개가 바뀌지는 않아요. 사진 자동 변환·배경 제거는 하지 않으므로, [그림 준비와 모션 안내](CUSTOM-CHARACTER.md)를 먼저 확인해 주세요.
+
 화면 공유 전에는 **말풍선에 작업 내용 표시**를 끄세요. Perch는 짧은 작업 요약을 이 기기에 보관하고 인터넷으로 보내지 않지만, 내가 AI에게 공유하는 화면·파일에는 해당 AI의 데이터 처리 조건이 적용돼요.
 
 ## 막혔을 때
@@ -59,4 +65,4 @@ Windows는 직접 실행한 개발 세션만 관찰하고 WSL은 지원하지 �
 
 [베타 이용 조건](BETA-EVALUATION-RIGHTS.md) · [전체 릴리스](https://github.com/moonweave/perch-releases/releases) · [버그 신고](https://github.com/moonweave/perch-releases/issues). 공개 이슈에는 개인정보나 작업 원문을 올리지 마세요.
 
-확인 기준: v0.1.21 · 2026-10-02. 근거: [공식 릴리스](https://github.com/moonweave/perch-releases/releases/tag/v0.1.21), [Mac 설치 안내](INSTALL.md), [Windows 설치 안내](INSTALL-WINDOWS.md).
+확인 기준: v0.1.23 · 2026-10-03. 근거: [공식 릴리스](https://github.com/moonweave/perch-releases/releases/tag/v0.1.23), [Mac 설치 안내](INSTALL.md), [Windows 설치 안내](INSTALL-WINDOWS.md).
