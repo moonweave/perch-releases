@@ -1,6 +1,6 @@
 # Perch 공개 베타
 
-Perch는 이 Mac이나 PC에서 실행한 Codex·Claude Code 개발 세션이 승인을 기다리거나 응답을 마쳤을 때 작은 캐릭터로 알려 줘요. 설치 뒤에는 [시작 가이드](https://github.com/moonweave/perch-releases/blob/main/START-HERE.md)를 따라 첫 알림까지 확인할 수 있어요.
+Perch는 이 Mac이나 PC에서 실행한 Codex·Claude Code 개발 세션이 승인을 기다리거나 응답을 마쳤을 때 작은 캐릭터로 알려 줘요. 설치 뒤에는 [시작 가이드](https://moonweave.github.io/perch-releases/START-HERE.html)를 따라 첫 알림까지 확인할 수 있어요.
 
 ## 필요한 설치 파일 하나만 받으세요
 
