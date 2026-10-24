@@ -2,6 +2,12 @@
 
 Perch는 이 Mac이나 PC에서 실행한 Codex·Claude Code 개발 세션이 승인을 기다리거나 응답을 마쳤을 때 작은 캐릭터로 알려 줘요. 설치 뒤에는 [시작 가이드](https://moonweave.github.io/perch-releases/START-HERE.html)를 따라 첫 알림까지 확인할 수 있어요.
 
+## 표시와 알림 조절
+
+이 안내의 표시·알림 조절은 2026-10-24 후속 설치본 기준이에요. 공개 다운로드 v0.1.28은 2026-10-06 빌드이며, 같은 버전 번호여도 아래 새 메뉴가 없을 수 있어요. 공개 설치 파일을 다시 받는 것만으로 후속 기능이 추가되지는 않아요.
+
+후속 설치본은 캐릭터 우클릭의 **캐릭터만 보기 / 말풍선 함께 보기**와 **Pet → 크기와 표시**에서 조절해요. 캐릭터만 보기에서 클릭하면 작업 요약을 열고, 크기는 아주 작게부터 크게까지 고를 수 있어요. 자세한 방법과 Antigravity 지원 범위는 [시작 가이드의 표시와 알림 조절](START-HERE.md#표시와-알림-조절)을 확인하세요.
+
 ## 필요한 설치 파일 하나만 받으세요
 
 **[Mac 설치 파일](https://github.com/moonweave/perch-releases/releases/download/v0.1.28/Perch-0.1.28-macOS-universal.dmg)** · **[Windows 설치 파일](https://github.com/moonweave/perch-releases/releases/download/v0.1.28/Perch-0.1.28-windows-x64-setup.exe)**
